@@ -64,4 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
   } else {
     console.error('Carousel container not found');
   }
+
+  // Mobile menu toggle (added here)
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
 });
